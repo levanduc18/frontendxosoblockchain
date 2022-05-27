@@ -1,0 +1,12 @@
+{
+  "message": {
+    "customer-support": "Service client",
+    "transactions": "Transactions",
+    "wallet": "Portefeuille",
+    "disconnect": "Déconnecter",
+    "install-metamask": "Installer metamask",
+    "connect-wallet": "Connecter portefeuille",
+    "home": "Accueil",
+    "lottery": "Loterie"
+  }
+}

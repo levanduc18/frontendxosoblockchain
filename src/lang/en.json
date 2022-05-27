@@ -1,0 +1,12 @@
+{
+  "message": {
+    "customer-support": "Customer support",
+    "transactions": "Transactions",
+    "wallet": "Wallet",
+    "disconnect": "Disconnect",
+    "install-metamask": "Install metamask",
+    "connect-wallet": "Connect wallet",
+    "home": "Home",
+    "lottery": "Lottery"
+  }
+}

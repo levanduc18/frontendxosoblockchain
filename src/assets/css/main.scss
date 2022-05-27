@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7a6eaa;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6c5f9e;
+}
+
+#app {
+  font-family: Kanit, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: rgb(40, 13, 95);
+}
+
+body.darkScrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+
+body.darkScrollbar::-webkit-scrollbar-thumb {
+  background: #b8add2;
+  border-radius: 4px;
+}
+
+body.darkScrollbar::-webkit-scrollbar-thumb:hover {
+  background: #8b81a3;
+}
