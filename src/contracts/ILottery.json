@@ -47,7 +47,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "//SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface ILottery {\r\n    //-------------------------------------------------------------------------\r\n    // VIEW FUNCTIONS\r\n    //-------------------------------------------------------------------------\r\n\r\n    //-------------------------------------------------------------------------\r\n    // STATE MODIFYING FUNCTIONS\r\n    //-------------------------------------------------------------------------\r\n\r\n    function numbersDrawn(\r\n        uint256 _lotteryId,\r\n        bytes32 _requestId,\r\n        uint256 _randomNumber\r\n    ) external;\r\n\r\n    /**\r\n     * @notice View current lottery id\r\n     */\r\n    function viewCurrentLotteryId() external view returns (uint256);\r\n}\r\n",
-  "sourcePath": "D:\\CapstoneProject\\contract-xosoblockchain\\contracts\\ILottery.sol",
+  "sourcePath": "D:\\contract-xosoblockchain\\contracts\\ILottery.sol",
   "ast": {
     "absolutePath": "project:/contracts/ILottery.sol",
     "exportedSymbols": {
@@ -483,8 +483,8 @@
     "version": "0.8.14+commit.80d49f37.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.6",
-  "updatedAt": "2022-05-27T08:06:16.790Z",
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-05-30T07:34:50.373Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

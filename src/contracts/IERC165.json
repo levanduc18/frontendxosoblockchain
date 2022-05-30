@@ -316,8 +316,8 @@
     "version": "0.8.14+commit.80d49f37.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.6",
-  "updatedAt": "2022-05-27T07:35:49.941Z",
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-05-30T07:34:50.351Z",
   "devdoc": {
     "details": "Interface of the ERC165 standard, as defined in the https://eips.ethereum.org/EIPS/eip-165[EIP]. Implementers can declare support of contract interfaces, which can then be queried by others ({ERC165Checker}). For an implementation, see {ERC165}.",
     "kind": "dev",

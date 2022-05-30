@@ -21,13 +21,13 @@ export const approve = async (numberTicket, from) => {
     .send({ from });
 };
 
-export const mint = async (from) => {
-  await usdtContractToWrite.methods
-    .mint(from, Web3.utils.toWei(String(2), "ether"))
-    .send({
-      from,
-    });
-};
+// export const mint = async (from) => {
+//   await usdtContractToWrite.methods
+//     .mint(from, Web3.utils.toWei(String(2), "ether"))
+//     .send({
+//       from,
+//     });
+// };
 
 export const getUSDTBalance = async (from) => {
   const balance = await usdtContractToRead.methods.balanceOf(from).call();

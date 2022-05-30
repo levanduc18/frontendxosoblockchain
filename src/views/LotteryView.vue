@@ -294,7 +294,7 @@
         <TheDivider />
         <div
           v-if="isShowDetailRound"
-          class="bg-white flex flex-row py-6 px-8 rounded-b-2xl"
+          class="prize-pot-container bg-white flex flex-row py-6 px-8 rounded-b-2xl"
         >
           <div class="left flex flex-col items-start">
             <div class="prize-pot-title text-xl font-semibold">Prize pot</div>
@@ -823,6 +823,15 @@ export default defineComponent({
       .middle {
         .left {
           color: variables.$custom-white-text;
+        }
+      }
+      .prize-pot-container {
+        background-color: variables.$dark-background-nav;
+        .left {
+          color: variables.$custom-white-text;
+          .prize-pot-title {
+            color: variables.$custom-white-text;
+          }
         }
       }
     }

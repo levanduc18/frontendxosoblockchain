@@ -1,5 +1,5 @@
 import Web3 from "web3/dist/web3.min.js";
-import { NETWORK_ID, PROVIDER } from "@/constants";
+import { NETWORK_ID, PROVIDER, RPCHTTP } from "@/constants";
 
 const provider = new Web3.providers.WebsocketProvider(PROVIDER);
 
@@ -51,11 +51,11 @@ export const switchNetwork = async () => {
               chainId: Web3.utils.toHex(NETWORK_ID),
               chainName: "Ganache",
               nativeCurrency: {
-                name: "ETH",
-                symbol: "ETH",
+                name: "MATIC",
+                symbol: "MATIC",
                 decimals: 18,
               },
-              rpcUrls: ["ws://localhost:8545"],
+              rpcUrls: [RPCHTTP],
             },
           ],
         });

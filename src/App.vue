@@ -25,9 +25,7 @@ export default {
     ],
   },
   data() {
-    return {
-      message: "hello",
-    };
+    return {};
   },
   computed: {
     ...mapState([

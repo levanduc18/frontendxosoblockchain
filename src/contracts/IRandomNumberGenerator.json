@@ -30,7 +30,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "//SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface IRandomNumberGenerator {\r\n\r\n    /** \r\n     * Requests randomness from a user-provided seed\r\n     */\r\n    function getRandomNumber(\r\n        uint256 lotteryId\r\n    ) \r\n        external \r\n        returns (bytes32 requestId);\r\n}",
-  "sourcePath": "D:\\CapstoneProject\\contract-xosoblockchain\\contracts\\IRandomNumberGenerator.sol",
+  "sourcePath": "D:\\contract-xosoblockchain\\contracts\\IRandomNumberGenerator.sol",
   "ast": {
     "absolutePath": "project:/contracts/IRandomNumberGenerator.sol",
     "exportedSymbols": {
@@ -304,8 +304,8 @@
     "version": "0.8.14+commit.80d49f37.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.6",
-  "updatedAt": "2022-05-27T08:06:16.793Z",
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-05-30T07:34:50.375Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

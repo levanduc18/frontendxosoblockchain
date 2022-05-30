@@ -135,9 +135,10 @@
                 >
                   <mdicon
                     name="check"
-                    :width="32"
-                    :height="32"
-                    class="text-green-500 absolute top-0 right-0"
+                    :width="48"
+                    :height="48"
+                    v-if="it?.winAmount > 0"
+                    class="text-green-500 absolute top-2 right-4"
                   />
                   <img :src="images.ticket" class="h-12" />
                   <div class="flex flex-col ml-4">
@@ -164,6 +165,12 @@
                         </div>
                       </div>
                     </div>
+                    <div class="flex flex-row items-center tẽt">
+                      Bought at:
+                      <div class="ml-1 font-semibold">
+                        {{ formatDate(it?.buyAt) }}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -178,6 +185,7 @@
 <script>
 import { mapActions, mapState } from "vuex";
 import { NETWORK_ID } from "@/constants";
+import moment from "moment";
 export default {
   name: "WalletModal",
   methods: {
@@ -185,7 +193,6 @@ export default {
       setIsOpenWalletModal: "setIsOpenWalletModal",
       getUSDTBalance: "getUSDTBalance",
       setActiveSwitchWallet: "setActiveSwitchWallet",
-      getUserTicketsAllRound: "getUserTicketsAllRound",
       setTicketsByUserAllRound: "setTicketsByUserAllRound",
     }),
     handleCopyAddress() {
@@ -197,6 +204,13 @@ export default {
     },
     handleCloseModal() {
       this.setIsOpenWalletModal(false);
+    },
+    formatDate(data) {
+      return data
+        ? moment(new Date(data * 1000).toISOString()).format(
+            "MMM DD, YYYY, HH:MM A"
+          )
+        : null;
     },
   },
   data() {
@@ -235,7 +249,7 @@ export default {
     },
   },
   async mounted() {
-    const ticketsAllRound = await this.getUserTicketsAllRound(this?.account);
+    const ticketsAllRound = await this.setTicketsByUserAllRound(this?.account);
     this.setTicketsByUserAllRound(ticketsAllRound);
   },
 };

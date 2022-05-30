@@ -117,6 +117,11 @@
               "internalType": "uint256",
               "name": "winAmount",
               "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "buyAt",
+              "type": "uint256"
             }
           ],
           "internalType": "struct ITicketNFT.TicketInfo[]",
@@ -162,6 +167,11 @@
             {
               "internalType": "uint256",
               "name": "winAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "buyAt",
               "type": "uint256"
             }
           ],
@@ -229,6 +239,11 @@
               "internalType": "uint256",
               "name": "winAmount",
               "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "buyAt",
+              "type": "uint256"
             }
           ],
           "internalType": "struct ITicketNFT.TicketInfo[]",
@@ -279,6 +294,11 @@
             {
               "internalType": "uint256",
               "name": "winAmount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "buyAt",
               "type": "uint256"
             }
           ],
@@ -343,7 +363,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_lottoID\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"_numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"_numbers\",\"type\":\"uint8\"}],\"name\":\"Mint\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentTicketId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ticketID\",\"type\":\"uint256\"}],\"name\":\"getOwnerOfTicket\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ticketID\",\"type\":\"uint256\"}],\"name\":\"getTicketInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ticketID\",\"type\":\"uint256\"}],\"name\":\"getTicketNumbers\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"ticketIds\",\"type\":\"uint256[]\"}],\"name\":\"getTickets\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUserTicketIds\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUserTickets\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_randomNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_firstTicketId\",\"type\":\"uint256\"}],\"name\":\"getWinningTickets\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalTickets\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"finalNumber\",\"type\":\"uint8\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"ticketId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"setTicketWinAmount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ITicketNFT.sol\":\"ITicketNFT\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0x8e93de94c9062ebc94fb7e2e3929b0781ac6a2b7772e2f7a59045861c93e5be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f920a631bf986c610fe573d3c70a2bb6f224f86f4a8550016470c7ee476c9ab5\",\"dweb:/ipfs/QmYzsyVMfnaREKHcHv5RPS8Xg5r1Q38E2SDsGBTnXeFWzb\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/ITicketNFT.sol\":{\"keccak256\":\"0xe9b6a020435e3b6205bd5c01e616542475de951f1ac7c2a16fbe5cb0871dc6d8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://74e2ec8f68609ca63a6a171d004ac9b773e1f101bae69e58b4a0896f35851023\",\"dweb:/ipfs/QmUq8uBqHD8AyQNQDCgb123eAhvRj2LuyNKcNMQBiAoF88\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.14+commit.80d49f37\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_lottoID\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"_numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint8\",\"name\":\"_numbers\",\"type\":\"uint8\"}],\"name\":\"Mint\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getCurrentTicketId\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ticketID\",\"type\":\"uint256\"}],\"name\":\"getOwnerOfTicket\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ticketID\",\"type\":\"uint256\"}],\"name\":\"getTicketInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"buyAt\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_ticketID\",\"type\":\"uint256\"}],\"name\":\"getTicketNumbers\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"ticketIds\",\"type\":\"uint256[]\"}],\"name\":\"getTickets\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"buyAt\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUserTicketIds\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"_user\",\"type\":\"address\"}],\"name\":\"getUserTickets\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"buyAt\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_randomNumber\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_firstTicketId\",\"type\":\"uint256\"}],\"name\":\"getWinningTickets\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"totalTickets\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"finalNumber\",\"type\":\"uint8\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"numbers\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"lotteryId\",\"type\":\"uint256\"},{\"internalType\":\"uint8\",\"name\":\"numberOfTickets\",\"type\":\"uint8\"},{\"internalType\":\"uint256\",\"name\":\"winAmount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"buyAt\",\"type\":\"uint256\"}],\"internalType\":\"struct ITicketNFT.TicketInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"},{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"ticketId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"setTicketWinAmount\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ITicketNFT.sol\":\"ITicketNFT\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\":{\"keccak256\":\"0x8e93de94c9062ebc94fb7e2e3929b0781ac6a2b7772e2f7a59045861c93e5be9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f920a631bf986c610fe573d3c70a2bb6f224f86f4a8550016470c7ee476c9ab5\",\"dweb:/ipfs/QmYzsyVMfnaREKHcHv5RPS8Xg5r1Q38E2SDsGBTnXeFWzb\"]},\"@openzeppelin/contracts/utils/introspection/IERC165.sol\":{\"keccak256\":\"0x447a5f3ddc18419d41ff92b3773fb86471b1db25773e07f877f548918a185bf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f\",\"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy\"]},\"project:/contracts/ITicketNFT.sol\":{\"keccak256\":\"0x81daebeb9a0e35615befe9acc5b50321deda1bf52185ab55c20389761a03582a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cfdfe7ab73e6948c647004189d9663434a133ac22fc26c84ea17dfc093e9ecd4\",\"dweb:/ipfs/QmUky9kPaijj1fVYcWxj4RR9iCymLqGy1kHJ7yencsqoVa\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -351,8 +371,8 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "//SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\";\r\n\r\ninterface ITicketNFT {\r\n    // Storage for ticket information\r\n    struct TicketInfo {\r\n        address owner;\r\n        uint8 numbers;\r\n        uint256 lotteryId;\r\n        uint8 numberOfTickets;\r\n        uint256 winAmount;\r\n    }\r\n\r\n    //-------------------------------------------------------------------------\r\n    // VIEW FUNCTIONS\r\n    //-------------------------------------------------------------------------\r\n\r\n    function getCurrentTicketId() external view returns (uint256);\r\n\r\n    function getTicketNumbers(uint256 _ticketID) external view returns (uint8);\r\n\r\n    function getOwnerOfTicket(uint256 _ticketID)\r\n        external\r\n        view\r\n        returns (address);\r\n\r\n    function getUserTicketIds(uint256 _lotteryId, address _user)\r\n        external\r\n        view\r\n        returns (uint256[] memory);\r\n\r\n    function getUserTickets(uint256 _lotteryId, address _user)\r\n        external\r\n        view\r\n        returns (TicketInfo[] memory);\r\n\r\n    function getTicketInfo(uint256 _ticketID)\r\n        external\r\n        view\r\n        returns (TicketInfo memory);\r\n\r\n    function getWinningTickets(\r\n        uint256 _lotteryId,\r\n        uint256 _randomNumber,\r\n        uint256 _firstTicketId\r\n    )\r\n        external\r\n        view\r\n        returns (\r\n            uint256 totalTickets,\r\n            uint8 finalNumber,\r\n            TicketInfo[] memory,\r\n            uint256[] memory\r\n        );\r\n\r\n    function getTickets(uint256[] memory ticketIds)\r\n        external\r\n        view\r\n        returns (TicketInfo[] memory);\r\n\r\n    //-------------------------------------------------------------------------\r\n    // STATE MODIFYING FUNCTIONS\r\n    //-------------------------------------------------------------------------\r\n\r\n    function Mint(\r\n        address _to,\r\n        uint256 _lottoID,\r\n        uint8 _numberOfTickets,\r\n        uint8 _numbers\r\n    ) external returns (uint256);\r\n\r\n    function setTicketWinAmount(uint256 ticketId, uint256 amount) external;\r\n}\r\n",
-  "sourcePath": "D:\\CapstoneProject\\contract-xosoblockchain\\contracts\\ITicketNFT.sol",
+  "source": "//SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\nimport \"@openzeppelin/contracts/token/ERC1155/IERC1155.sol\";\r\n\r\ninterface ITicketNFT {\r\n    // Storage for ticket information\r\n    struct TicketInfo {\r\n        address owner;  // Address of owner who buy this ticket\r\n        uint8 numbers;  // Two chosen digits number\r\n        uint256 lotteryId;  // LotteryId that this ticket belong to\r\n        uint8 numberOfTickets;  // Number of tickets\r\n        uint256 winAmount;  // Amount this ticket win\r\n        uint256 buyAt;  // The time buy ticket\r\n    }\r\n\r\n    //-------------------------------------------------------------------------\r\n    // VIEW FUNCTIONS\r\n    //-------------------------------------------------------------------------\r\n\r\n    function getCurrentTicketId() external view returns (uint256);\r\n\r\n    function getTicketNumbers(uint256 _ticketID) external view returns (uint8);\r\n\r\n    function getOwnerOfTicket(uint256 _ticketID)\r\n        external\r\n        view\r\n        returns (address);\r\n\r\n    function getUserTicketIds(uint256 _lotteryId, address _user)\r\n        external\r\n        view\r\n        returns (uint256[] memory);\r\n\r\n    function getUserTickets(uint256 _lotteryId, address _user)\r\n        external\r\n        view\r\n        returns (TicketInfo[] memory);\r\n\r\n    function getTicketInfo(uint256 _ticketID)\r\n        external\r\n        view\r\n        returns (TicketInfo memory);\r\n\r\n    function getWinningTickets(\r\n        uint256 _lotteryId,\r\n        uint256 _randomNumber,\r\n        uint256 _firstTicketId\r\n    )\r\n        external\r\n        view\r\n        returns (\r\n            uint256 totalTickets,\r\n            uint8 finalNumber,\r\n            TicketInfo[] memory,\r\n            uint256[] memory\r\n        );\r\n\r\n    function getTickets(uint256[] memory ticketIds)\r\n        external\r\n        view\r\n        returns (TicketInfo[] memory);\r\n\r\n    //-------------------------------------------------------------------------\r\n    // STATE MODIFYING FUNCTIONS\r\n    //-------------------------------------------------------------------------\r\n\r\n    function Mint(\r\n        address _to,\r\n        uint256 _lottoID,\r\n        uint8 _numberOfTickets,\r\n        uint8 _numbers\r\n    ) external returns (uint256);\r\n\r\n    function setTicketWinAmount(uint256 ticketId, uint256 amount) external;\r\n}\r\n",
+  "sourcePath": "D:\\contract-xosoblockchain\\contracts\\ITicketNFT.sol",
   "ast": {
     "absolutePath": "project:/contracts/ITicketNFT.sol",
     "exportedSymbols": {
@@ -363,10 +383,10 @@
         3145
       ],
       "ITicketNFT": [
-        3700
+        3702
       ]
     },
-    "id": 3701,
+    "id": 3703,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -387,7 +407,7 @@
         "id": 3590,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 3701,
+        "scope": 3703,
         "sourceUnit": 1822,
         "src": "59:60:23",
         "symbolAliases": [],
@@ -400,9 +420,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 3700,
+        "id": 3702,
         "linearizedBaseContracts": [
-          3700
+          3702
         ],
         "name": "ITicketNFT",
         "nameLocation": "133:10:23",
@@ -410,7 +430,7 @@
         "nodes": [
           {
             "canonicalName": "ITicketNFT.TicketInfo",
-            "id": 3601,
+            "id": 3603,
             "members": [
               {
                 "constant": false,
@@ -419,7 +439,7 @@
                 "name": "owner",
                 "nameLocation": "227:5:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
+                "scope": 3603,
                 "src": "219:13:23",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -445,10 +465,10 @@
                 "id": 3594,
                 "mutability": "mutable",
                 "name": "numbers",
-                "nameLocation": "249:7:23",
+                "nameLocation": "290:7:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "243:13:23",
+                "scope": 3603,
+                "src": "284:13:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -459,7 +479,7 @@
                   "id": 3593,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
-                  "src": "243:5:23",
+                  "src": "284:5:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint8",
                     "typeString": "uint8"
@@ -472,10 +492,10 @@
                 "id": 3596,
                 "mutability": "mutable",
                 "name": "lotteryId",
-                "nameLocation": "275:9:23",
+                "nameLocation": "345:9:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "267:17:23",
+                "scope": 3603,
+                "src": "337:17:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -486,7 +506,7 @@
                   "id": 3595,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "267:7:23",
+                  "src": "337:7:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -499,10 +519,10 @@
                 "id": 3598,
                 "mutability": "mutable",
                 "name": "numberOfTickets",
-                "nameLocation": "301:15:23",
+                "nameLocation": "412:15:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "295:21:23",
+                "scope": 3603,
+                "src": "406:21:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -513,7 +533,7 @@
                   "id": 3597,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
-                  "src": "295:5:23",
+                  "src": "406:5:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint8",
                     "typeString": "uint8"
@@ -526,10 +546,10 @@
                 "id": 3600,
                 "mutability": "mutable",
                 "name": "winAmount",
-                "nameLocation": "335:9:23",
+                "nameLocation": "468:9:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "327:17:23",
+                "scope": 3603,
+                "src": "460:17:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -540,7 +560,34 @@
                   "id": 3599,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "327:7:23",
+                  "src": "460:7:23",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3602,
+                "mutability": "mutable",
+                "name": "buyAt",
+                "nameLocation": "523:5:23",
+                "nodeType": "VariableDeclaration",
+                "scope": 3603,
+                "src": "515:13:23",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3601,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "515:7:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -552,38 +599,38 @@
             "name": "TicketInfo",
             "nameLocation": "197:10:23",
             "nodeType": "StructDefinition",
-            "scope": 3700,
-            "src": "190:162:23",
+            "scope": 3702,
+            "src": "190:370:23",
             "visibility": "public"
           },
           {
             "functionSelector": "bc49516b",
-            "id": 3606,
+            "id": 3608,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getCurrentTicketId",
-            "nameLocation": "556:18:23",
+            "nameLocation": "764:18:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3602,
+              "id": 3604,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "574:2:23"
+              "src": "782:2:23"
             },
             "returnParameters": {
-              "id": 3605,
+              "id": 3607,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3604,
+                  "id": 3606,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3606,
-                  "src": "600:7:23",
+                  "scope": 3608,
+                  "src": "808:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -591,10 +638,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3603,
+                    "id": 3605,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "600:7:23",
+                    "src": "808:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -603,36 +650,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "599:9:23"
+              "src": "807:9:23"
             },
-            "scope": 3700,
-            "src": "547:62:23",
+            "scope": 3702,
+            "src": "755:62:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "9839eafd",
-            "id": 3613,
+            "id": 3615,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getTicketNumbers",
-            "nameLocation": "626:16:23",
+            "nameLocation": "834:16:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3609,
+              "id": 3611,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3608,
+                  "id": 3610,
                   "mutability": "mutable",
                   "name": "_ticketID",
-                  "nameLocation": "651:9:23",
+                  "nameLocation": "859:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3613,
-                  "src": "643:17:23",
+                  "scope": 3615,
+                  "src": "851:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -640,10 +687,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3607,
+                    "id": 3609,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "643:7:23",
+                    "src": "851:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -652,21 +699,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "642:19:23"
+              "src": "850:19:23"
             },
             "returnParameters": {
-              "id": 3612,
+              "id": 3614,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3611,
+                  "id": 3613,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3613,
-                  "src": "685:5:23",
+                  "scope": 3615,
+                  "src": "893:5:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -674,10 +721,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 3610,
+                    "id": 3612,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "685:5:23",
+                    "src": "893:5:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -686,36 +733,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "684:7:23"
+              "src": "892:7:23"
             },
-            "scope": 3700,
-            "src": "617:75:23",
+            "scope": 3702,
+            "src": "825:75:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "9d755367",
-            "id": 3620,
+            "id": 3622,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getOwnerOfTicket",
-            "nameLocation": "709:16:23",
+            "nameLocation": "917:16:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3616,
+              "id": 3618,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3615,
+                  "id": 3617,
                   "mutability": "mutable",
                   "name": "_ticketID",
-                  "nameLocation": "734:9:23",
+                  "nameLocation": "942:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3620,
-                  "src": "726:17:23",
+                  "scope": 3622,
+                  "src": "934:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -723,10 +770,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3614,
+                    "id": 3616,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "726:7:23",
+                    "src": "934:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -735,21 +782,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "725:19:23"
+              "src": "933:19:23"
             },
             "returnParameters": {
-              "id": 3619,
+              "id": 3621,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3618,
+                  "id": 3620,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3620,
-                  "src": "795:7:23",
+                  "scope": 3622,
+                  "src": "1003:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -757,10 +804,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3617,
+                    "id": 3619,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "795:7:23",
+                    "src": "1003:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -770,36 +817,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "794:9:23"
+              "src": "1002:9:23"
             },
-            "scope": 3700,
-            "src": "700:104:23",
+            "scope": 3702,
+            "src": "908:104:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "5dd703e9",
-            "id": 3630,
+            "id": 3632,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUserTicketIds",
-            "nameLocation": "821:16:23",
+            "nameLocation": "1029:16:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3625,
+              "id": 3627,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3622,
+                  "id": 3624,
                   "mutability": "mutable",
                   "name": "_lotteryId",
-                  "nameLocation": "846:10:23",
+                  "nameLocation": "1054:10:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3630,
-                  "src": "838:18:23",
+                  "scope": 3632,
+                  "src": "1046:18:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -807,10 +854,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3621,
+                    "id": 3623,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "838:7:23",
+                    "src": "1046:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -820,13 +867,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3624,
+                  "id": 3626,
                   "mutability": "mutable",
                   "name": "_user",
-                  "nameLocation": "866:5:23",
+                  "nameLocation": "1074:5:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3630,
-                  "src": "858:13:23",
+                  "scope": 3632,
+                  "src": "1066:13:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -834,10 +881,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3623,
+                    "id": 3625,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "858:7:23",
+                    "src": "1066:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -847,21 +894,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "837:35:23"
+              "src": "1045:35:23"
             },
             "returnParameters": {
-              "id": 3629,
+              "id": 3631,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3628,
+                  "id": 3630,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3630,
-                  "src": "923:16:23",
+                  "scope": 3632,
+                  "src": "1131:16:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -870,18 +917,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3626,
+                      "id": 3628,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "923:7:23",
+                      "src": "1131:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 3627,
+                    "id": 3629,
                     "nodeType": "ArrayTypeName",
-                    "src": "923:9:23",
+                    "src": "1131:9:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -890,36 +937,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "922:18:23"
+              "src": "1130:18:23"
             },
-            "scope": 3700,
-            "src": "812:129:23",
+            "scope": 3702,
+            "src": "1020:129:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "e7a7f65c",
-            "id": 3641,
+            "id": 3643,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUserTickets",
-            "nameLocation": "958:14:23",
+            "nameLocation": "1166:14:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3635,
+              "id": 3637,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3632,
+                  "id": 3634,
                   "mutability": "mutable",
                   "name": "_lotteryId",
-                  "nameLocation": "981:10:23",
+                  "nameLocation": "1189:10:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3641,
-                  "src": "973:18:23",
+                  "scope": 3643,
+                  "src": "1181:18:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -927,10 +974,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3631,
+                    "id": 3633,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "973:7:23",
+                    "src": "1181:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -940,13 +987,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3634,
+                  "id": 3636,
                   "mutability": "mutable",
                   "name": "_user",
-                  "nameLocation": "1001:5:23",
+                  "nameLocation": "1209:5:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3641,
-                  "src": "993:13:23",
+                  "scope": 3643,
+                  "src": "1201:13:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -954,10 +1001,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3633,
+                    "id": 3635,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "993:7:23",
+                    "src": "1201:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -967,86 +1014,86 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "972:35:23"
+              "src": "1180:35:23"
             },
             "returnParameters": {
-              "id": 3640,
+              "id": 3642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3639,
+                  "id": 3641,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3641,
-                  "src": "1058:19:23",
+                  "scope": 3643,
+                  "src": "1266:19:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3637,
+                      "id": 3639,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 3636,
+                        "id": 3638,
                         "name": "TicketInfo",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3601,
-                        "src": "1058:10:23"
+                        "referencedDeclaration": 3603,
+                        "src": "1266:10:23"
                       },
-                      "referencedDeclaration": 3601,
-                      "src": "1058:10:23",
+                      "referencedDeclaration": 3603,
+                      "src": "1266:10:23",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                        "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                         "typeString": "struct ITicketNFT.TicketInfo"
                       }
                     },
-                    "id": 3638,
+                    "id": 3640,
                     "nodeType": "ArrayTypeName",
-                    "src": "1058:12:23",
+                    "src": "1266:12:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_storage_$dyn_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1057:21:23"
+              "src": "1265:21:23"
             },
-            "scope": 3700,
-            "src": "949:130:23",
+            "scope": 3702,
+            "src": "1157:130:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "ff99a063",
-            "id": 3649,
+            "id": 3651,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getTicketInfo",
-            "nameLocation": "1096:13:23",
+            "nameLocation": "1304:13:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3644,
+              "id": 3646,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3643,
+                  "id": 3645,
                   "mutability": "mutable",
                   "name": "_ticketID",
-                  "nameLocation": "1118:9:23",
+                  "nameLocation": "1326:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3649,
-                  "src": "1110:17:23",
+                  "scope": 3651,
+                  "src": "1318:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1054,10 +1101,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3642,
+                    "id": 3644,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1110:7:23",
+                    "src": "1318:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1066,104 +1113,77 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1109:19:23"
+              "src": "1317:19:23"
             },
             "returnParameters": {
-              "id": 3648,
+              "id": 3650,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3647,
+                  "id": 3649,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3649,
-                  "src": "1179:17:23",
+                  "scope": 3651,
+                  "src": "1387:17:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TicketInfo_$3601_memory_ptr",
+                    "typeIdentifier": "t_struct$_TicketInfo_$3603_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo"
                   },
                   "typeName": {
-                    "id": 3646,
+                    "id": 3648,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 3645,
+                      "id": 3647,
                       "name": "TicketInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3601,
-                      "src": "1179:10:23"
+                      "referencedDeclaration": 3603,
+                      "src": "1387:10:23"
                     },
-                    "referencedDeclaration": 3601,
-                    "src": "1179:10:23",
+                    "referencedDeclaration": 3603,
+                    "src": "1387:10:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                      "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1178:19:23"
+              "src": "1386:19:23"
             },
-            "scope": 3700,
-            "src": "1087:111:23",
+            "scope": 3702,
+            "src": "1295:111:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "0fa3f02c",
-            "id": 3669,
+            "id": 3671,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getWinningTickets",
-            "nameLocation": "1215:17:23",
+            "nameLocation": "1423:17:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3656,
+              "id": 3658,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3651,
-                  "mutability": "mutable",
-                  "name": "_lotteryId",
-                  "nameLocation": "1251:10:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1243:18:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 3650,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1243:7:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
                   "id": 3653,
                   "mutability": "mutable",
-                  "name": "_randomNumber",
-                  "nameLocation": "1280:13:23",
+                  "name": "_lotteryId",
+                  "nameLocation": "1459:10:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1272:21:23",
+                  "scope": 3671,
+                  "src": "1451:18:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1174,7 +1194,7 @@
                     "id": 3652,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1272:7:23",
+                    "src": "1451:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1186,11 +1206,11 @@
                   "constant": false,
                   "id": 3655,
                   "mutability": "mutable",
-                  "name": "_firstTicketId",
-                  "nameLocation": "1312:14:23",
+                  "name": "_randomNumber",
+                  "nameLocation": "1488:13:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1304:22:23",
+                  "scope": 3671,
+                  "src": "1480:21:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1201,41 +1221,7 @@
                     "id": 3654,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1304:7:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1232:101:23"
-            },
-            "returnParameters": {
-              "id": 3668,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 3658,
-                  "mutability": "mutable",
-                  "name": "totalTickets",
-                  "nameLocation": "1406:12:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1398:20:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 3657,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1398:7:23",
+                    "src": "1480:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1245,13 +1231,74 @@
                 },
                 {
                   "constant": false,
+                  "id": 3657,
+                  "mutability": "mutable",
+                  "name": "_firstTicketId",
+                  "nameLocation": "1520:14:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3671,
+                  "src": "1512:22:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3656,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1512:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1440:101:23"
+            },
+            "returnParameters": {
+              "id": 3670,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
                   "id": 3660,
                   "mutability": "mutable",
-                  "name": "finalNumber",
-                  "nameLocation": "1439:11:23",
+                  "name": "totalTickets",
+                  "nameLocation": "1614:12:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1433:17:23",
+                  "scope": 3671,
+                  "src": "1606:20:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3659,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1606:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3662,
+                  "mutability": "mutable",
+                  "name": "finalNumber",
+                  "nameLocation": "1647:11:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3671,
+                  "src": "1641:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1259,10 +1306,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 3659,
+                    "id": 3661,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1433:5:23",
+                    "src": "1641:5:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -1272,42 +1319,42 @@
                 },
                 {
                   "constant": false,
-                  "id": 3664,
+                  "id": 3666,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1465:19:23",
+                  "scope": 3671,
+                  "src": "1673:19:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3662,
+                      "id": 3664,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 3661,
+                        "id": 3663,
                         "name": "TicketInfo",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3601,
-                        "src": "1465:10:23"
+                        "referencedDeclaration": 3603,
+                        "src": "1673:10:23"
                       },
-                      "referencedDeclaration": 3601,
-                      "src": "1465:10:23",
+                      "referencedDeclaration": 3603,
+                      "src": "1673:10:23",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                        "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                         "typeString": "struct ITicketNFT.TicketInfo"
                       }
                     },
-                    "id": 3663,
+                    "id": 3665,
                     "nodeType": "ArrayTypeName",
-                    "src": "1465:12:23",
+                    "src": "1673:12:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_storage_$dyn_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo[]"
                     }
                   },
@@ -1315,13 +1362,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3667,
+                  "id": 3669,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1499:16:23",
+                  "scope": 3671,
+                  "src": "1707:16:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1330,18 +1377,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3665,
+                      "id": 3667,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "1499:7:23",
+                      "src": "1707:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 3666,
+                    "id": 3668,
                     "nodeType": "ArrayTypeName",
-                    "src": "1499:9:23",
+                    "src": "1707:9:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -1350,36 +1397,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1383:143:23"
+              "src": "1591:143:23"
             },
-            "scope": 3700,
-            "src": "1206:321:23",
+            "scope": 3702,
+            "src": "1414:321:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "127873f7",
-            "id": 3679,
+            "id": 3681,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getTickets",
-            "nameLocation": "1544:10:23",
+            "nameLocation": "1752:10:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3673,
+              "id": 3675,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3672,
+                  "id": 3674,
                   "mutability": "mutable",
                   "name": "ticketIds",
-                  "nameLocation": "1572:9:23",
+                  "nameLocation": "1780:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3679,
-                  "src": "1555:26:23",
+                  "scope": 3681,
+                  "src": "1763:26:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1388,18 +1435,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3670,
+                      "id": 3672,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "1555:7:23",
+                      "src": "1763:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 3671,
+                    "id": 3673,
                     "nodeType": "ArrayTypeName",
-                    "src": "1555:9:23",
+                    "src": "1763:9:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -1408,86 +1455,86 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1554:28:23"
+              "src": "1762:28:23"
             },
             "returnParameters": {
-              "id": 3678,
+              "id": 3680,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3677,
+                  "id": 3679,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3679,
-                  "src": "1633:19:23",
+                  "scope": 3681,
+                  "src": "1841:19:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3675,
+                      "id": 3677,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 3674,
+                        "id": 3676,
                         "name": "TicketInfo",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3601,
-                        "src": "1633:10:23"
+                        "referencedDeclaration": 3603,
+                        "src": "1841:10:23"
                       },
-                      "referencedDeclaration": 3601,
-                      "src": "1633:10:23",
+                      "referencedDeclaration": 3603,
+                      "src": "1841:10:23",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                        "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                         "typeString": "struct ITicketNFT.TicketInfo"
                       }
                     },
-                    "id": 3676,
+                    "id": 3678,
                     "nodeType": "ArrayTypeName",
-                    "src": "1633:12:23",
+                    "src": "1841:12:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_storage_$dyn_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1632:21:23"
+              "src": "1840:21:23"
             },
-            "scope": 3700,
-            "src": "1535:119:23",
+            "scope": 3702,
+            "src": "1743:119:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "867f5168",
-            "id": 3692,
+            "id": 3694,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "Mint",
-            "nameLocation": "1869:4:23",
+            "nameLocation": "2077:4:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3688,
+              "id": 3690,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3681,
+                  "id": 3683,
                   "mutability": "mutable",
                   "name": "_to",
-                  "nameLocation": "1892:3:23",
+                  "nameLocation": "2100:3:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1884:11:23",
+                  "scope": 3694,
+                  "src": "2092:11:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1495,10 +1542,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3680,
+                    "id": 3682,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1884:7:23",
+                    "src": "2092:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1509,13 +1556,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3683,
+                  "id": 3685,
                   "mutability": "mutable",
                   "name": "_lottoID",
-                  "nameLocation": "1914:8:23",
+                  "nameLocation": "2122:8:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1906:16:23",
+                  "scope": 3694,
+                  "src": "2114:16:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1523,10 +1570,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3682,
+                    "id": 3684,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1906:7:23",
+                    "src": "2114:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1536,40 +1583,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3685,
-                  "mutability": "mutable",
-                  "name": "_numberOfTickets",
-                  "nameLocation": "1939:16:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1933:22:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint8",
-                    "typeString": "uint8"
-                  },
-                  "typeName": {
-                    "id": 3684,
-                    "name": "uint8",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1933:5:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint8",
-                      "typeString": "uint8"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
                   "id": 3687,
                   "mutability": "mutable",
-                  "name": "_numbers",
-                  "nameLocation": "1972:8:23",
+                  "name": "_numberOfTickets",
+                  "nameLocation": "2147:16:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1966:14:23",
+                  "scope": 3694,
+                  "src": "2141:22:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1580,7 +1600,34 @@
                     "id": 3686,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1966:5:23",
+                    "src": "2141:5:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3689,
+                  "mutability": "mutable",
+                  "name": "_numbers",
+                  "nameLocation": "2180:8:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3694,
+                  "src": "2174:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 3688,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2174:5:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -1589,21 +1636,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1873:114:23"
+              "src": "2081:114:23"
             },
             "returnParameters": {
-              "id": 3691,
+              "id": 3693,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3690,
+                  "id": 3692,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "2006:7:23",
+                  "scope": 3694,
+                  "src": "2214:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1611,10 +1658,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3689,
+                    "id": 3691,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2006:7:23",
+                    "src": "2214:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1623,63 +1670,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2005:9:23"
+              "src": "2213:9:23"
             },
-            "scope": 3700,
-            "src": "1860:155:23",
+            "scope": 3702,
+            "src": "2068:155:23",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "22ea80af",
-            "id": 3699,
+            "id": 3701,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "setTicketWinAmount",
-            "nameLocation": "2032:18:23",
+            "nameLocation": "2240:18:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3697,
+              "id": 3699,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3694,
-                  "mutability": "mutable",
-                  "name": "ticketId",
-                  "nameLocation": "2059:8:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3699,
-                  "src": "2051:16:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 3693,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2051:7:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
                   "id": 3696,
                   "mutability": "mutable",
-                  "name": "amount",
-                  "nameLocation": "2077:6:23",
+                  "name": "ticketId",
+                  "nameLocation": "2267:8:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3699,
-                  "src": "2069:14:23",
+                  "scope": 3701,
+                  "src": "2259:16:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1690,7 +1710,34 @@
                     "id": 3695,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2069:7:23",
+                    "src": "2259:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3698,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "2285:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3701,
+                  "src": "2277:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3697,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2277:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1699,27 +1746,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2050:34:23"
+              "src": "2258:34:23"
             },
             "returnParameters": {
-              "id": 3698,
+              "id": 3700,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2093:0:23"
+              "src": "2301:0:23"
             },
-            "scope": 3700,
-            "src": "2023:71:23",
+            "scope": 3702,
+            "src": "2231:71:23",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 3701,
-        "src": "123:1974:23",
+        "scope": 3703,
+        "src": "123:2182:23",
         "usedErrors": []
       }
     ],
-    "src": "32:2067:23"
+    "src": "32:2275:23"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/ITicketNFT.sol",
@@ -1731,10 +1778,10 @@
         3145
       ],
       "ITicketNFT": [
-        3700
+        3702
       ]
     },
-    "id": 3701,
+    "id": 3703,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -1755,7 +1802,7 @@
         "id": 3590,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 3701,
+        "scope": 3703,
         "sourceUnit": 1822,
         "src": "59:60:23",
         "symbolAliases": [],
@@ -1768,9 +1815,9 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "fullyImplemented": false,
-        "id": 3700,
+        "id": 3702,
         "linearizedBaseContracts": [
-          3700
+          3702
         ],
         "name": "ITicketNFT",
         "nameLocation": "133:10:23",
@@ -1778,7 +1825,7 @@
         "nodes": [
           {
             "canonicalName": "ITicketNFT.TicketInfo",
-            "id": 3601,
+            "id": 3603,
             "members": [
               {
                 "constant": false,
@@ -1787,7 +1834,7 @@
                 "name": "owner",
                 "nameLocation": "227:5:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
+                "scope": 3603,
                 "src": "219:13:23",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1813,10 +1860,10 @@
                 "id": 3594,
                 "mutability": "mutable",
                 "name": "numbers",
-                "nameLocation": "249:7:23",
+                "nameLocation": "290:7:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "243:13:23",
+                "scope": 3603,
+                "src": "284:13:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1827,7 +1874,7 @@
                   "id": 3593,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
-                  "src": "243:5:23",
+                  "src": "284:5:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint8",
                     "typeString": "uint8"
@@ -1840,10 +1887,10 @@
                 "id": 3596,
                 "mutability": "mutable",
                 "name": "lotteryId",
-                "nameLocation": "275:9:23",
+                "nameLocation": "345:9:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "267:17:23",
+                "scope": 3603,
+                "src": "337:17:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1854,7 +1901,7 @@
                   "id": 3595,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "267:7:23",
+                  "src": "337:7:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -1867,10 +1914,10 @@
                 "id": 3598,
                 "mutability": "mutable",
                 "name": "numberOfTickets",
-                "nameLocation": "301:15:23",
+                "nameLocation": "412:15:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "295:21:23",
+                "scope": 3603,
+                "src": "406:21:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1881,7 +1928,7 @@
                   "id": 3597,
                   "name": "uint8",
                   "nodeType": "ElementaryTypeName",
-                  "src": "295:5:23",
+                  "src": "406:5:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint8",
                     "typeString": "uint8"
@@ -1894,10 +1941,10 @@
                 "id": 3600,
                 "mutability": "mutable",
                 "name": "winAmount",
-                "nameLocation": "335:9:23",
+                "nameLocation": "468:9:23",
                 "nodeType": "VariableDeclaration",
-                "scope": 3601,
-                "src": "327:17:23",
+                "scope": 3603,
+                "src": "460:17:23",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -1908,7 +1955,34 @@
                   "id": 3599,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "327:7:23",
+                  "src": "460:7:23",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3602,
+                "mutability": "mutable",
+                "name": "buyAt",
+                "nameLocation": "523:5:23",
+                "nodeType": "VariableDeclaration",
+                "scope": 3603,
+                "src": "515:13:23",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3601,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "515:7:23",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -1920,38 +1994,38 @@
             "name": "TicketInfo",
             "nameLocation": "197:10:23",
             "nodeType": "StructDefinition",
-            "scope": 3700,
-            "src": "190:162:23",
+            "scope": 3702,
+            "src": "190:370:23",
             "visibility": "public"
           },
           {
             "functionSelector": "bc49516b",
-            "id": 3606,
+            "id": 3608,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getCurrentTicketId",
-            "nameLocation": "556:18:23",
+            "nameLocation": "764:18:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3602,
+              "id": 3604,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "574:2:23"
+              "src": "782:2:23"
             },
             "returnParameters": {
-              "id": 3605,
+              "id": 3607,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3604,
+                  "id": 3606,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3606,
-                  "src": "600:7:23",
+                  "scope": 3608,
+                  "src": "808:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1959,10 +2033,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3603,
+                    "id": 3605,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "600:7:23",
+                    "src": "808:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1971,36 +2045,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "599:9:23"
+              "src": "807:9:23"
             },
-            "scope": 3700,
-            "src": "547:62:23",
+            "scope": 3702,
+            "src": "755:62:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "9839eafd",
-            "id": 3613,
+            "id": 3615,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getTicketNumbers",
-            "nameLocation": "626:16:23",
+            "nameLocation": "834:16:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3609,
+              "id": 3611,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3608,
+                  "id": 3610,
                   "mutability": "mutable",
                   "name": "_ticketID",
-                  "nameLocation": "651:9:23",
+                  "nameLocation": "859:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3613,
-                  "src": "643:17:23",
+                  "scope": 3615,
+                  "src": "851:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2008,10 +2082,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3607,
+                    "id": 3609,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "643:7:23",
+                    "src": "851:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2020,21 +2094,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "642:19:23"
+              "src": "850:19:23"
             },
             "returnParameters": {
-              "id": 3612,
+              "id": 3614,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3611,
+                  "id": 3613,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3613,
-                  "src": "685:5:23",
+                  "scope": 3615,
+                  "src": "893:5:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2042,10 +2116,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 3610,
+                    "id": 3612,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "685:5:23",
+                    "src": "893:5:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -2054,36 +2128,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "684:7:23"
+              "src": "892:7:23"
             },
-            "scope": 3700,
-            "src": "617:75:23",
+            "scope": 3702,
+            "src": "825:75:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "9d755367",
-            "id": 3620,
+            "id": 3622,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getOwnerOfTicket",
-            "nameLocation": "709:16:23",
+            "nameLocation": "917:16:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3616,
+              "id": 3618,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3615,
+                  "id": 3617,
                   "mutability": "mutable",
                   "name": "_ticketID",
-                  "nameLocation": "734:9:23",
+                  "nameLocation": "942:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3620,
-                  "src": "726:17:23",
+                  "scope": 3622,
+                  "src": "934:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2091,10 +2165,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3614,
+                    "id": 3616,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "726:7:23",
+                    "src": "934:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2103,21 +2177,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "725:19:23"
+              "src": "933:19:23"
             },
             "returnParameters": {
-              "id": 3619,
+              "id": 3621,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3618,
+                  "id": 3620,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3620,
-                  "src": "795:7:23",
+                  "scope": 3622,
+                  "src": "1003:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2125,10 +2199,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3617,
+                    "id": 3619,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "795:7:23",
+                    "src": "1003:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2138,36 +2212,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "794:9:23"
+              "src": "1002:9:23"
             },
-            "scope": 3700,
-            "src": "700:104:23",
+            "scope": 3702,
+            "src": "908:104:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "5dd703e9",
-            "id": 3630,
+            "id": 3632,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUserTicketIds",
-            "nameLocation": "821:16:23",
+            "nameLocation": "1029:16:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3625,
+              "id": 3627,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3622,
+                  "id": 3624,
                   "mutability": "mutable",
                   "name": "_lotteryId",
-                  "nameLocation": "846:10:23",
+                  "nameLocation": "1054:10:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3630,
-                  "src": "838:18:23",
+                  "scope": 3632,
+                  "src": "1046:18:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2175,10 +2249,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3621,
+                    "id": 3623,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "838:7:23",
+                    "src": "1046:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2188,13 +2262,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3624,
+                  "id": 3626,
                   "mutability": "mutable",
                   "name": "_user",
-                  "nameLocation": "866:5:23",
+                  "nameLocation": "1074:5:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3630,
-                  "src": "858:13:23",
+                  "scope": 3632,
+                  "src": "1066:13:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2202,10 +2276,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3623,
+                    "id": 3625,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "858:7:23",
+                    "src": "1066:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2215,21 +2289,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "837:35:23"
+              "src": "1045:35:23"
             },
             "returnParameters": {
-              "id": 3629,
+              "id": 3631,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3628,
+                  "id": 3630,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3630,
-                  "src": "923:16:23",
+                  "scope": 3632,
+                  "src": "1131:16:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2238,18 +2312,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3626,
+                      "id": 3628,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "923:7:23",
+                      "src": "1131:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 3627,
+                    "id": 3629,
                     "nodeType": "ArrayTypeName",
-                    "src": "923:9:23",
+                    "src": "1131:9:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -2258,36 +2332,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "922:18:23"
+              "src": "1130:18:23"
             },
-            "scope": 3700,
-            "src": "812:129:23",
+            "scope": 3702,
+            "src": "1020:129:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "e7a7f65c",
-            "id": 3641,
+            "id": 3643,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getUserTickets",
-            "nameLocation": "958:14:23",
+            "nameLocation": "1166:14:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3635,
+              "id": 3637,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3632,
+                  "id": 3634,
                   "mutability": "mutable",
                   "name": "_lotteryId",
-                  "nameLocation": "981:10:23",
+                  "nameLocation": "1189:10:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3641,
-                  "src": "973:18:23",
+                  "scope": 3643,
+                  "src": "1181:18:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2295,10 +2369,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3631,
+                    "id": 3633,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "973:7:23",
+                    "src": "1181:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2308,13 +2382,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3634,
+                  "id": 3636,
                   "mutability": "mutable",
                   "name": "_user",
-                  "nameLocation": "1001:5:23",
+                  "nameLocation": "1209:5:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3641,
-                  "src": "993:13:23",
+                  "scope": 3643,
+                  "src": "1201:13:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2322,10 +2396,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3633,
+                    "id": 3635,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "993:7:23",
+                    "src": "1201:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2335,86 +2409,86 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "972:35:23"
+              "src": "1180:35:23"
             },
             "returnParameters": {
-              "id": 3640,
+              "id": 3642,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3639,
+                  "id": 3641,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3641,
-                  "src": "1058:19:23",
+                  "scope": 3643,
+                  "src": "1266:19:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3637,
+                      "id": 3639,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 3636,
+                        "id": 3638,
                         "name": "TicketInfo",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3601,
-                        "src": "1058:10:23"
+                        "referencedDeclaration": 3603,
+                        "src": "1266:10:23"
                       },
-                      "referencedDeclaration": 3601,
-                      "src": "1058:10:23",
+                      "referencedDeclaration": 3603,
+                      "src": "1266:10:23",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                        "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                         "typeString": "struct ITicketNFT.TicketInfo"
                       }
                     },
-                    "id": 3638,
+                    "id": 3640,
                     "nodeType": "ArrayTypeName",
-                    "src": "1058:12:23",
+                    "src": "1266:12:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_storage_$dyn_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1057:21:23"
+              "src": "1265:21:23"
             },
-            "scope": 3700,
-            "src": "949:130:23",
+            "scope": 3702,
+            "src": "1157:130:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "ff99a063",
-            "id": 3649,
+            "id": 3651,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getTicketInfo",
-            "nameLocation": "1096:13:23",
+            "nameLocation": "1304:13:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3644,
+              "id": 3646,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3643,
+                  "id": 3645,
                   "mutability": "mutable",
                   "name": "_ticketID",
-                  "nameLocation": "1118:9:23",
+                  "nameLocation": "1326:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3649,
-                  "src": "1110:17:23",
+                  "scope": 3651,
+                  "src": "1318:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2422,10 +2496,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3642,
+                    "id": 3644,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1110:7:23",
+                    "src": "1318:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2434,104 +2508,77 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1109:19:23"
+              "src": "1317:19:23"
             },
             "returnParameters": {
-              "id": 3648,
+              "id": 3650,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3647,
+                  "id": 3649,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3649,
-                  "src": "1179:17:23",
+                  "scope": 3651,
+                  "src": "1387:17:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_TicketInfo_$3601_memory_ptr",
+                    "typeIdentifier": "t_struct$_TicketInfo_$3603_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo"
                   },
                   "typeName": {
-                    "id": 3646,
+                    "id": 3648,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 3645,
+                      "id": 3647,
                       "name": "TicketInfo",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3601,
-                      "src": "1179:10:23"
+                      "referencedDeclaration": 3603,
+                      "src": "1387:10:23"
                     },
-                    "referencedDeclaration": 3601,
-                    "src": "1179:10:23",
+                    "referencedDeclaration": 3603,
+                    "src": "1387:10:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                      "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1178:19:23"
+              "src": "1386:19:23"
             },
-            "scope": 3700,
-            "src": "1087:111:23",
+            "scope": 3702,
+            "src": "1295:111:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "0fa3f02c",
-            "id": 3669,
+            "id": 3671,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getWinningTickets",
-            "nameLocation": "1215:17:23",
+            "nameLocation": "1423:17:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3656,
+              "id": 3658,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3651,
-                  "mutability": "mutable",
-                  "name": "_lotteryId",
-                  "nameLocation": "1251:10:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1243:18:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 3650,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1243:7:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
                   "id": 3653,
                   "mutability": "mutable",
-                  "name": "_randomNumber",
-                  "nameLocation": "1280:13:23",
+                  "name": "_lotteryId",
+                  "nameLocation": "1459:10:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1272:21:23",
+                  "scope": 3671,
+                  "src": "1451:18:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2542,7 +2589,7 @@
                     "id": 3652,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1272:7:23",
+                    "src": "1451:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2554,11 +2601,11 @@
                   "constant": false,
                   "id": 3655,
                   "mutability": "mutable",
-                  "name": "_firstTicketId",
-                  "nameLocation": "1312:14:23",
+                  "name": "_randomNumber",
+                  "nameLocation": "1488:13:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1304:22:23",
+                  "scope": 3671,
+                  "src": "1480:21:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2569,41 +2616,7 @@
                     "id": 3654,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1304:7:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                }
-              ],
-              "src": "1232:101:23"
-            },
-            "returnParameters": {
-              "id": 3668,
-              "nodeType": "ParameterList",
-              "parameters": [
-                {
-                  "constant": false,
-                  "id": 3658,
-                  "mutability": "mutable",
-                  "name": "totalTickets",
-                  "nameLocation": "1406:12:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1398:20:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 3657,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1398:7:23",
+                    "src": "1480:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2613,13 +2626,74 @@
                 },
                 {
                   "constant": false,
+                  "id": 3657,
+                  "mutability": "mutable",
+                  "name": "_firstTicketId",
+                  "nameLocation": "1520:14:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3671,
+                  "src": "1512:22:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3656,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1512:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1440:101:23"
+            },
+            "returnParameters": {
+              "id": 3670,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
                   "id": 3660,
                   "mutability": "mutable",
-                  "name": "finalNumber",
-                  "nameLocation": "1439:11:23",
+                  "name": "totalTickets",
+                  "nameLocation": "1614:12:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1433:17:23",
+                  "scope": 3671,
+                  "src": "1606:20:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3659,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1606:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3662,
+                  "mutability": "mutable",
+                  "name": "finalNumber",
+                  "nameLocation": "1647:11:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3671,
+                  "src": "1641:17:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2627,10 +2701,10 @@
                     "typeString": "uint8"
                   },
                   "typeName": {
-                    "id": 3659,
+                    "id": 3661,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1433:5:23",
+                    "src": "1641:5:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -2640,42 +2714,42 @@
                 },
                 {
                   "constant": false,
-                  "id": 3664,
+                  "id": 3666,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1465:19:23",
+                  "scope": 3671,
+                  "src": "1673:19:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3662,
+                      "id": 3664,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 3661,
+                        "id": 3663,
                         "name": "TicketInfo",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3601,
-                        "src": "1465:10:23"
+                        "referencedDeclaration": 3603,
+                        "src": "1673:10:23"
                       },
-                      "referencedDeclaration": 3601,
-                      "src": "1465:10:23",
+                      "referencedDeclaration": 3603,
+                      "src": "1673:10:23",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                        "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                         "typeString": "struct ITicketNFT.TicketInfo"
                       }
                     },
-                    "id": 3663,
+                    "id": 3665,
                     "nodeType": "ArrayTypeName",
-                    "src": "1465:12:23",
+                    "src": "1673:12:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_storage_$dyn_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo[]"
                     }
                   },
@@ -2683,13 +2757,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3667,
+                  "id": 3669,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3669,
-                  "src": "1499:16:23",
+                  "scope": 3671,
+                  "src": "1707:16:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2698,18 +2772,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3665,
+                      "id": 3667,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "1499:7:23",
+                      "src": "1707:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 3666,
+                    "id": 3668,
                     "nodeType": "ArrayTypeName",
-                    "src": "1499:9:23",
+                    "src": "1707:9:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -2718,36 +2792,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1383:143:23"
+              "src": "1591:143:23"
             },
-            "scope": 3700,
-            "src": "1206:321:23",
+            "scope": 3702,
+            "src": "1414:321:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "127873f7",
-            "id": 3679,
+            "id": 3681,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "getTickets",
-            "nameLocation": "1544:10:23",
+            "nameLocation": "1752:10:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3673,
+              "id": 3675,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3672,
+                  "id": 3674,
                   "mutability": "mutable",
                   "name": "ticketIds",
-                  "nameLocation": "1572:9:23",
+                  "nameLocation": "1780:9:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3679,
-                  "src": "1555:26:23",
+                  "scope": 3681,
+                  "src": "1763:26:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2756,18 +2830,18 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3670,
+                      "id": 3672,
                       "name": "uint256",
                       "nodeType": "ElementaryTypeName",
-                      "src": "1555:7:23",
+                      "src": "1763:7:23",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "id": 3671,
+                    "id": 3673,
                     "nodeType": "ArrayTypeName",
-                    "src": "1555:9:23",
+                    "src": "1763:9:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
                       "typeString": "uint256[]"
@@ -2776,86 +2850,86 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1554:28:23"
+              "src": "1762:28:23"
             },
             "returnParameters": {
-              "id": 3678,
+              "id": 3680,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3677,
+                  "id": 3679,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3679,
-                  "src": "1633:19:23",
+                  "scope": 3681,
+                  "src": "1841:19:23",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct ITicketNFT.TicketInfo[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3675,
+                      "id": 3677,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 3674,
+                        "id": 3676,
                         "name": "TicketInfo",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3601,
-                        "src": "1633:10:23"
+                        "referencedDeclaration": 3603,
+                        "src": "1841:10:23"
                       },
-                      "referencedDeclaration": 3601,
-                      "src": "1633:10:23",
+                      "referencedDeclaration": 3603,
+                      "src": "1841:10:23",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_TicketInfo_$3601_storage_ptr",
+                        "typeIdentifier": "t_struct$_TicketInfo_$3603_storage_ptr",
                         "typeString": "struct ITicketNFT.TicketInfo"
                       }
                     },
-                    "id": 3676,
+                    "id": 3678,
                     "nodeType": "ArrayTypeName",
-                    "src": "1633:12:23",
+                    "src": "1841:12:23",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3601_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_TicketInfo_$3603_storage_$dyn_storage_ptr",
                       "typeString": "struct ITicketNFT.TicketInfo[]"
                     }
                   },
                   "visibility": "internal"
                 }
               ],
-              "src": "1632:21:23"
+              "src": "1840:21:23"
             },
-            "scope": 3700,
-            "src": "1535:119:23",
+            "scope": 3702,
+            "src": "1743:119:23",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "867f5168",
-            "id": 3692,
+            "id": 3694,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "Mint",
-            "nameLocation": "1869:4:23",
+            "nameLocation": "2077:4:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3688,
+              "id": 3690,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3681,
+                  "id": 3683,
                   "mutability": "mutable",
                   "name": "_to",
-                  "nameLocation": "1892:3:23",
+                  "nameLocation": "2100:3:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1884:11:23",
+                  "scope": 3694,
+                  "src": "2092:11:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2863,10 +2937,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3680,
+                    "id": 3682,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1884:7:23",
+                    "src": "2092:7:23",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -2877,13 +2951,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3683,
+                  "id": 3685,
                   "mutability": "mutable",
                   "name": "_lottoID",
-                  "nameLocation": "1914:8:23",
+                  "nameLocation": "2122:8:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1906:16:23",
+                  "scope": 3694,
+                  "src": "2114:16:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2891,10 +2965,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3682,
+                    "id": 3684,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1906:7:23",
+                    "src": "2114:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2904,40 +2978,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3685,
-                  "mutability": "mutable",
-                  "name": "_numberOfTickets",
-                  "nameLocation": "1939:16:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1933:22:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint8",
-                    "typeString": "uint8"
-                  },
-                  "typeName": {
-                    "id": 3684,
-                    "name": "uint8",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "1933:5:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint8",
-                      "typeString": "uint8"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
                   "id": 3687,
                   "mutability": "mutable",
-                  "name": "_numbers",
-                  "nameLocation": "1972:8:23",
+                  "name": "_numberOfTickets",
+                  "nameLocation": "2147:16:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "1966:14:23",
+                  "scope": 3694,
+                  "src": "2141:22:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2948,7 +2995,34 @@
                     "id": 3686,
                     "name": "uint8",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1966:5:23",
+                    "src": "2141:5:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3689,
+                  "mutability": "mutable",
+                  "name": "_numbers",
+                  "nameLocation": "2180:8:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3694,
+                  "src": "2174:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 3688,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2174:5:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint8",
                       "typeString": "uint8"
@@ -2957,21 +3031,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1873:114:23"
+              "src": "2081:114:23"
             },
             "returnParameters": {
-              "id": 3691,
+              "id": 3693,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3690,
+                  "id": 3692,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3692,
-                  "src": "2006:7:23",
+                  "scope": 3694,
+                  "src": "2214:7:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2979,10 +3053,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3689,
+                    "id": 3691,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2006:7:23",
+                    "src": "2214:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2991,63 +3065,36 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2005:9:23"
+              "src": "2213:9:23"
             },
-            "scope": 3700,
-            "src": "1860:155:23",
+            "scope": 3702,
+            "src": "2068:155:23",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
             "functionSelector": "22ea80af",
-            "id": 3699,
+            "id": 3701,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "setTicketWinAmount",
-            "nameLocation": "2032:18:23",
+            "nameLocation": "2240:18:23",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3697,
+              "id": 3699,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3694,
-                  "mutability": "mutable",
-                  "name": "ticketId",
-                  "nameLocation": "2059:8:23",
-                  "nodeType": "VariableDeclaration",
-                  "scope": 3699,
-                  "src": "2051:16:23",
-                  "stateVariable": false,
-                  "storageLocation": "default",
-                  "typeDescriptions": {
-                    "typeIdentifier": "t_uint256",
-                    "typeString": "uint256"
-                  },
-                  "typeName": {
-                    "id": 3693,
-                    "name": "uint256",
-                    "nodeType": "ElementaryTypeName",
-                    "src": "2051:7:23",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    }
-                  },
-                  "visibility": "internal"
-                },
-                {
-                  "constant": false,
                   "id": 3696,
                   "mutability": "mutable",
-                  "name": "amount",
-                  "nameLocation": "2077:6:23",
+                  "name": "ticketId",
+                  "nameLocation": "2267:8:23",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3699,
-                  "src": "2069:14:23",
+                  "scope": 3701,
+                  "src": "2259:16:23",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -3058,7 +3105,34 @@
                     "id": 3695,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "2069:7:23",
+                    "src": "2259:7:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 3698,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "2285:6:23",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 3701,
+                  "src": "2277:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 3697,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2277:7:23",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -3067,35 +3141,35 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "2050:34:23"
+              "src": "2258:34:23"
             },
             "returnParameters": {
-              "id": 3698,
+              "id": 3700,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "2093:0:23"
+              "src": "2301:0:23"
             },
-            "scope": 3700,
-            "src": "2023:71:23",
+            "scope": 3702,
+            "src": "2231:71:23",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 3701,
-        "src": "123:1974:23",
+        "scope": 3703,
+        "src": "123:2182:23",
         "usedErrors": []
       }
     ],
-    "src": "32:2067:23"
+    "src": "32:2275:23"
   },
   "compiler": {
     "name": "solc",
     "version": "0.8.14+commit.80d49f37.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.4.6",
-  "updatedAt": "2022-05-27T08:06:16.795Z",
+  "schemaVersion": "3.4.5",
+  "updatedAt": "2022-05-30T07:34:50.377Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

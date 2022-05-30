@@ -160,7 +160,7 @@
 import { mapActions, mapState } from "vuex";
 import TheDivider from "@/components/TheDivider/TheDivider.vue";
 import { NETWORK_ID } from "@/constants";
-import { approve, mint } from "@/utils/getUSDTContract";
+import { approve } from "@/utils/getUSDTContract";
 import { buyTickets, costToBuyTickets } from "@/utils/getLotteryContract";
 
 export default {
@@ -216,10 +216,8 @@ export default {
       }, 1500);
     },
     async handleBuyTicket() {
-      await mint(this.account);
-
       try {
-        await approve(this.ticketNumber, this.account);
+        await approve(this?.cost, this?.account);
         await buyTickets(
           this.currentLottery?.lotteryID,
           this.numberTicket,
